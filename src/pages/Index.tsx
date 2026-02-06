@@ -1,13 +1,14 @@
 import { useCallback, useRef, useState } from "react";
 import Rose from "@/components/Rose";
 import Petal from "@/components/Petal";
+import Heart from "@/components/Heart";
 
 const COLORS = [
-  "hsl(340, 80%, 80%)",  // soft pink
-  "hsl(20, 85%, 82%)",   // peach
-  "hsl(45, 70%, 88%)",   // cream
-  "hsl(55, 75%, 80%)",   // pale yellow
-  "hsl(270, 60%, 82%)",  // lavender
+  "hsl(340, 80%, 80%)",
+  "hsl(20, 85%, 82%)",
+  "hsl(45, 70%, 88%)",
+  "hsl(55, 75%, 80%)",
+  "hsl(270, 60%, 82%)",
 ];
 
 interface RoseData {
@@ -41,7 +42,6 @@ const Index = () => {
 
     setRoses((prev) => [...prev, { id: roseId, x, y, color }]);
 
-    // Spawn 6-10 petals
     const petalCount = 6 + Math.floor(Math.random() * 5);
     const newPetals = Array.from({ length: petalCount }, () => ({
       id: nextId++,
@@ -89,6 +89,9 @@ const Index = () => {
       >
         Happy Rose Day 🌹
       </h1>
+
+      {/* Heart */}
+      <Heart />
 
       {/* Hint */}
       <p
