@@ -20,7 +20,7 @@ const CONFETTI_COLORS = [
 ];
 
 const FINAL_POEM = {
-  title: "She Said YES! 🎉💖",
+  title: "🎉💖",
   lines: [
     "From this moment, my heart is forever yours,",
     "Through every sunrise and every storm that pours.",

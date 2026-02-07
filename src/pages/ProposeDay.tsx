@@ -2,6 +2,7 @@ import { useState, useCallback, useRef, useEffect } from "react";
 import FloatingHearts from "@/components/propose/FloatingHearts";
 import ProposalPoem from "@/components/propose/ProposalPoem";
 import CelebrationScreen from "@/components/propose/CelebrationScreen";
+import BackgroundMusic from "@/components/propose/BackgroundMusic";
 
 const INITIAL_POEM = {
   title: "For You, My Love 💕",
@@ -90,6 +91,7 @@ const ProposeDay = () => {
           "linear-gradient(135deg, hsl(330, 60%, 18%) 0%, hsl(280, 40%, 20%) 40%, hsl(340, 50%, 25%) 70%, hsl(20, 60%, 22%) 100%)",
       }}
     >
+      <BackgroundMusic />
       <FloatingHearts />
 
       <div className="relative z-10 max-w-xl w-full flex flex-col items-center gap-8">
