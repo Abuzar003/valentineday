@@ -1,4 +1,5 @@
 import { useCallback, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Rose from "@/components/Rose";
 import Petal from "@/components/Petal";
 import Heart from "@/components/Heart";
@@ -93,9 +94,24 @@ const Index = () => {
       {/* Heart */}
       <Heart />
 
+      {/* Navigation */}
+      <Link
+        to="/propose"
+        className="absolute bottom-16 left-0 right-0 text-center z-20"
+        style={{
+          fontFamily: "'Dancing Script', cursive",
+          fontSize: "clamp(1rem, 2.5vw, 1.3rem)",
+          color: "hsl(340, 80%, 80%)",
+          textDecoration: "none",
+          textShadow: "0 0 15px hsla(340, 80%, 65%, 0.4)",
+        }}
+      >
+        Next: Propose Day 💍 →
+      </Link>
+
       {/* Hint */}
       <p
-        className="absolute bottom-8 left-0 right-0 text-center z-10 pointer-events-none"
+        className="absolute bottom-6 left-0 right-0 text-center z-10 pointer-events-none"
         style={{
           fontFamily: "'Dancing Script', cursive",
           fontSize: "clamp(0.9rem, 2.5vw, 1.2rem)",
