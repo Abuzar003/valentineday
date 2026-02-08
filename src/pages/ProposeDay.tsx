@@ -3,6 +3,7 @@ import FloatingHearts from "@/components/propose/FloatingHearts";
 import ProposalPoem from "@/components/propose/ProposalPoem";
 import CelebrationScreen from "@/components/propose/CelebrationScreen";
 import BackgroundMusic from "@/components/propose/BackgroundMusic";
+import { Link } from "react-router-dom";
 
 const INITIAL_POEM = {
   title: "For You, My Love 💕",
@@ -165,6 +166,20 @@ const ProposeDay = () => {
           </p>
         )}
       </div>
+
+      <Link
+        to="/chocolate"
+        className="absolute bottom-8 left-0 right-0 text-center z-20"
+        style={{
+          fontFamily: "'Dancing Script', cursive",
+          fontSize: "clamp(1rem, 2.5vw, 1.2rem)",
+          color: "hsla(30, 60%, 70%, 0.6)",
+          textDecoration: "none",
+          textShadow: "0 0 12px hsla(30, 50%, 50%, 0.3)",
+        }}
+      >
+        Next: Chocolate Day 🍫 →
+      </Link>
     </div>
   );
 };
