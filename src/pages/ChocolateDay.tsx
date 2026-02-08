@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import FloatingChocolates from "@/components/chocolate/FloatingChocolates";
+import ChocolateMusic from "@/components/chocolate/ChocolateMusic";
 
 const POEM_LINES = [
   "You're sweeter than the finest chocolate kiss,",
@@ -19,6 +20,7 @@ const ChocolateDay = () => {
           "linear-gradient(160deg, hsl(25, 30%, 12%) 0%, hsl(15, 40%, 16%) 40%, hsl(10, 35%, 20%) 70%, hsl(30, 25%, 14%) 100%)",
       }}
     >
+      <ChocolateMusic />
       <FloatingChocolates />
 
       {/* Chocolate Icon */}
