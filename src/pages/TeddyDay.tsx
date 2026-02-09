@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import FloatingTeddies from "@/components/teddy/FloatingTeddies";
+import TeddyMusic from "@/components/teddy/TeddyMusic";
 import iqraTeddy from "@/assets/iqra-teddy.png";
 import abuzarTeddy from "@/assets/abuzar-teddy.png";
 
@@ -31,6 +32,7 @@ const TeddyDay = () => {
           "linear-gradient(160deg, hsl(30, 30%, 90%) 0%, hsl(350, 40%, 90%) 35%, hsl(25, 35%, 88%) 65%, hsl(340, 30%, 92%) 100%)",
       }}
     >
+      <TeddyMusic />
       <FloatingTeddies />
 
       {/* Title */}
