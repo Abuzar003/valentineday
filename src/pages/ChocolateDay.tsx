@@ -154,6 +154,18 @@ const ChocolateDay = () => {
         >
           ← Propose Day
         </Link>
+        <Link
+          to="/teddy"
+          className="transition-all duration-300 hover:scale-105"
+          style={{
+            fontFamily: "'Dancing Script', cursive",
+            fontSize: "clamp(0.95rem, 2vw, 1.15rem)",
+            color: "hsla(30, 50%, 70%, 0.6)",
+            textDecoration: "none",
+          }}
+        >
+          Next: Teddy Day 🧸 →
+        </Link>
       </div>
     </div>
   );
