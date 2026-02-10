@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import GoldenParticles from "@/components/promise/GoldenParticles";
+import PromiseMusic from "@/components/promise/PromiseMusic";
 import PromiseCard from "@/components/promise/PromiseCard";
 import SealAnimation from "@/components/promise/SealAnimation";
 
@@ -56,6 +57,7 @@ const PromiseDay = () => {
           "linear-gradient(160deg, hsl(270, 40%, 10%) 0%, hsl(260, 35%, 15%) 30%, hsl(280, 30%, 12%) 60%, hsl(250, 40%, 14%) 100%)",
       }}
     >
+      <PromiseMusic />
       <GoldenParticles />
 
       {/* Ornamental top divider */}
