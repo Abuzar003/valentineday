@@ -187,6 +187,18 @@ const PromiseDay = () => {
         >
           ← Teddy Day
         </Link>
+        <Link
+          to="/hug"
+          className="transition-all duration-300 hover:scale-105"
+          style={{
+            fontFamily: "'Dancing Script', cursive",
+            fontSize: "clamp(0.95rem, 2vw, 1.15rem)",
+            color: "hsla(43, 40%, 60%, 0.5)",
+            textDecoration: "none",
+          }}
+        >
+          Hug Day 🌸 →
+        </Link>
       </div>
 
       <style>{`
