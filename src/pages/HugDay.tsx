@@ -194,6 +194,18 @@ const HugDay = () => (
         >
           ← Promise Day
         </Link>
+        <Link
+          to="/kiss"
+          className="transition-all duration-300 hover:scale-105"
+          style={{
+            fontFamily: "'Dancing Script', cursive",
+            fontSize: "clamp(0.95rem, 2vw, 1.15rem)",
+            color: "hsla(340, 30%, 55%, 0.6)",
+            textDecoration: "none",
+          }}
+        >
+          Kiss Day 🥀 →
+        </Link>
       </div>
     </div>
 
