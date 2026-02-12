@@ -3,6 +3,7 @@ import DarkRosePetals from "@/components/kiss/DarkRosePetals";
 import SmokeMist from "@/components/kiss/SmokeMist";
 import Embers from "@/components/kiss/Embers";
 import DarkSection from "@/components/kiss/DarkSection";
+import KissMusic from "@/components/kiss/KissMusic";
 
 const prose: React.CSSProperties = {
   fontFamily: "'Cormorant Garamond', 'Georgia', serif",
@@ -64,6 +65,7 @@ const KissDay = () => (
     <DarkRosePetals />
     <SmokeMist />
     <Embers />
+    <KissMusic />
 
     <div className="flex flex-col items-center px-4 py-24 gap-0">
 
