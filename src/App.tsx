@@ -10,6 +10,7 @@ import TeddyDay from "./pages/TeddyDay";
 import PromiseDay from "./pages/PromiseDay";
 import HugDay from "./pages/HugDay";
 import KissDay from "./pages/KissDay";
+import ValentineDay from "./pages/ValentineDay";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/promise" element={<PromiseDay />} />
           <Route path="/hug" element={<HugDay />} />
           <Route path="/kiss" element={<KissDay />} />
+          <Route path="/valentine" element={<ValentineDay />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
